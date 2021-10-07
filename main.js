@@ -13,7 +13,7 @@ app.get('/download', function(request, response) {
 　var url = request.query.url;
   var resHeader = {
      'Content-Type' : 'audio\mp3',
-     'Content-Disposition' : 'attachment; filename="'+req.query.url+'.mp3"'
+     'Content-Disposition' : 'attachment; filename="'+request.query.url+'.mp3"'
   };
   response.writeHead(200, resHeader );
 　ytdl(url).pipe(response);
