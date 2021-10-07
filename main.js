@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/download', function(request, response) {
-　var url = req.query.url;
+　var url = request.query.url;
   var resHeader = {
      'Content-Type' : 'audio\mp3',
      'Content-Disposition' : 'attachment; filename="'+req.query.url+'.mp3"'
