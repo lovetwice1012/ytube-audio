@@ -5,9 +5,13 @@ var app = express();
 
 app.set('port', (process.env.PORT || 8080));
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+/*
 app.get('/', function(request, response) {
   response.send('Hello World!')
 });
+*/
 
 app.get('/download', function(request, response) {
 　var url = request.query.url;
