@@ -1,13 +1,55 @@
 <html>
-  <head>
-   <title>ytube-audio youtube mp3 downloader</title>
- </head>
- <body>
-   <h1>ytube-audio ~youtube mp3 downloader~</h1>
-   <form action="download" method="get">
-    <label for="name">Youtube URL: </label>
-    <input type="text" name="url" required>
-    <input type="submit" value="Downlaod!">
-    </form>
- </body>
+
+<head>
+    <title>ytube-audio youtube mp3 downloader</title>
+    <style>
+        h1 {
+            position: relative;
+            padding: 6px;
+            background-image: -webkit-linear-gradient(315deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+            background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+        }
+
+        h1 span {
+            display: block;
+            padding: 1rem 2rem;
+            background: #fff;
+        }
+
+        .outer {
+            position: relative;
+            text-align: center;
+            height: 20%;
+        }
+
+        .inner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 80%;
+            height: 3.2rem;
+        }
+
+        body {
+            background-color: rgba(171, 247, 240, 0.986);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1><span>ytube-audio</br>~youtube mp3 downloader~</span></h1>
+            <form action="download" method="get">
+                <label for="name">Youtube URL: </label>
+                <input type="text" name="url" required>
+                <input type="submit" value="Download!">
+            </form>
+        </div>
+    </div>
+</body>　
 </html>
